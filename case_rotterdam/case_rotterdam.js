@@ -41,7 +41,7 @@ globe.translucency.frontFaceAlphaByDistance = new Cesium.NearFarScalar(
 // Add the telecommunication cable segment from Rotterdam
       const telecomTileset = scene.primitives.add(
         new Cesium.Cesium3DTileset({
-          url: Cesium.IonResource.fromAssetId(1114210),
+          url: Cesium.IonResource.fromAssetId(1115933),
         })
       );
 
