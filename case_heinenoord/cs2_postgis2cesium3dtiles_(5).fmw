@@ -1,0 +1,1524 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" "C:\Users\rohit\Documents\Rohit\GEO2020\Case studies\Case study 2 - Heinenoord\cs2_postgis2cesium3dtiles_(5).fmw"
+#          --SourceDataset_POSTGIS_3 "case_heinenoord"
+#          --DestDataset_CESIUM3DTILES "C:\Users\rohit\Documents\Rohit\GEO2020\Case studies\Case study 2 - Heinenoord"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="2544.33 953.135"
+#!   DOC_TOP_LEFT="-306.736 -1059.63"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="22346"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="b8286ca0-45f7-4a0d-9b1e-0e409fa7bd71"
+#!   FME_DOCUMENT_PRIORGUID="d67c94a5-a3f2-45d7-915f-c9a956005d84,aba199bd-fd9b-4c52-8387-076a91e59f50,5136cc26-be55-479e-8103-6fd44051e30e,23706ab5-1043-4fae-b3ec-8e27dd037c92,d473a3fc-b531-465e-bb32-8fb90691f071,09e52a45-773b-419d-8f4c-2fb90a2862d7,2a76d383-88f0-4a97-8d7b-272d0809a051,1df8868c-6d7c-4b62-97e1-25ae8e131a03,d4888026-e3bf-4048-8558-1330b17afe28,7ea6a200-1180-47cd-98f2-25ba741311c3"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2022.0.1.0 (20220602 - Build 22346 - WIN64)"
+#!   LAST_SAVE_DATE="2022-06-13T02:54:35"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="39"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="195.314 -51.0822"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="104"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="POSTGIS"
+#!   DATASET="$(SourceDataset_POSTGIS_3)"
+#!   KEYWORD="POSTGIS_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="postgis_sql_where_clause &quot;&quot; postgis_sql_statement &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float8 fme_rotation float8 fme_secondary_axis float8 fme_start_angle float8 fme_sweep_angle float8 fme_text_size float8 fme_text_string char(50) fme_type char(50) multi_reader_full_id int4 multi_reader_id int4 multi_reader_keyword char(50) multi_reader_type char(50) postgis_collection_id int4 postgis_collection_part_id int4 postgis_type char(50) postgres_oid int4"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP postgis_query_settings_group postgis_sql_where_clause%postgis_sql_statement Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgis_sql_where_clause MODE,WHERE;FORMAT,POSTGIS WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG postgis_sql_statement MODE,SQL;FORMAT,POSTGIS SELECT Statement&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey Unique"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="22346"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="POSTGIS_IN_FEATURES_PER_FETCH POSTGIS_IN_BEGIN_SQL POSTGIS_IN_END_SQL POSTGIS_IN_SEARCH_METHOD POSTGIS_OUT_BULK_COPY POSTGIS_OUT_MISSING_ATTRIBUTE_BEHAVIOUR POSTGIS_OUT_INSERT_TEXT_GEOMETRY POSTGIS_OUT_TRANSACTION_INTERVAL POSTGIS_OUT_BEGIN_SQL POSTGIS_OUT_END_SQL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING_HISTORIC"
+#!   VALUE="ALL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL END_SQL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="CESIUM3DTILES"
+#!   DATASET="$(DestDataset_CESIUM3DTILES)"
+#!   KEYWORD="CESIUM3DTILES_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="600"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="cesium3dtiles_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="cesium_priority float fme_basename string fme_color string fme_dataset string fme_feature_type string fme_fill_color string fme_geometry string fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string string fme_type string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="22346"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="tileset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Cesium 3D Tileset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Cesium 3D Tileset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Cesium 3D Tileset"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bool"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="jsonb"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bytea"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bytea"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bytea"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int4"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int4"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oid"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="serial"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float4"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="money"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float8"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timetz"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamptz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uuid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bit(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varbit"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varbit(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multilinestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multicurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_linestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_circularstring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_compoundcurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multisurface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_curvepolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipolygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipolygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipoint"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipolygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multilinestring"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_triangle"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_polyhedralsurface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_polyhedralsurface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_tin"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_geometry"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_geometrycollection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipolygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipolygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_multipolygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="postgis_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium_point_cloud"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium_3d_object"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium_3d_object"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium_3d_object"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="cesium_point_cloud"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CESIUM3DTILES"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="parcels_heinenoord"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="public"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="21"
+#!   FEAT_GEOMTYPE="postgis_none postgis_point postgis_multipoint postgis_linestring postgis_multilinestring postgis_circularstring postgis_compoundcurve postgis_multicurve postgis_polygon postgis_multipolygon postgis_curvepolygon postgis_multisurface postgis_triangle postgis_polyhedralsurface postgis_tin postgis_geometrycollection"
+#!   POSITION="-211.13440507001229 -719.6287812878129"
+#!   BOUNDING_RECT="-211.13440507001229 -719.6287812878129 685.03231825772946 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="POSTGIS_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="globalid" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="description" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="objecttype" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="longname" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="compositiontype" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="interiororexteriorspace" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="elevationwithflooring" ATTR_TYPE="float8" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="annotation" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="axis" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="body" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="party" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="rights" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="restrictions" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="responsibilities" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="postgis_query_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="postgis_sql_statement" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="postgis_sql_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="tunnel_heinenoord"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="public"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="22"
+#!   FEAT_GEOMTYPE="postgis_none postgis_point postgis_multipoint postgis_linestring postgis_multilinestring postgis_circularstring postgis_compoundcurve postgis_multicurve postgis_polygon postgis_multipolygon postgis_curvepolygon postgis_multisurface postgis_triangle postgis_polyhedralsurface postgis_tin postgis_geometrycollection"
+#!   POSITION="-211.13440507001229 -222.74881248812488"
+#!   BOUNDING_RECT="-211.13440507001229 -222.74881248812488 673.25106825772946 71"
+#!   ORDER="500000000000023"
+#!   COLLAPSED="true"
+#!   KEYWORD="POSTGIS_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="globalid" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="description" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="objecttype" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="tag" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="compositiontype" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="annotation" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="axis" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="body" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="party" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="rights" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="restrictions" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="responsibilities" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="postgis_query_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="postgis_sql_statement" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="postgis_sql_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="public.tunnel_heinenoord"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="17"
+#!   FEAT_GEOMTYPE="cesium_3d_object"
+#!   POSITION="1501.5785157851583 -252.79718989497587"
+#!   BOUNDING_RECT="1501.5785157851583 -252.79718989497587 626.25106825772946 71"
+#!   ORDER="500000000000024"
+#!   COLLAPSED="true"
+#!   KEYWORD="CESIUM3DTILES_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="globalid" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="objecttype" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="tag" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="compositiontype" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="annotation" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="axis" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="body" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="party" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="rights" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="restrictions" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="responsibilities" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="public.parcels_heinenoord"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="18"
+#!   FEAT_GEOMTYPE="cesium_3d_object"
+#!   POSITION="1501.5785157851583 -749.67715869466383"
+#!   BOUNDING_RECT="1501.5785157851583 -749.67715869466383 638.03231825772946 71"
+#!   ORDER="500000000000025"
+#!   COLLAPSED="true"
+#!   KEYWORD="CESIUM3DTILES_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="globalid" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="objecttype" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="longname" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="compositiontype" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="interiororexteriorspace" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="elevationwithflooring" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="annotation" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="axis" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="body" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="party" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="rights" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="restrictions" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="responsibilities" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="CESIUM3DTILES_1"
+#!   OVERRIDE="-CESIUM3DTILES_1_DATASET"
+#!   DATASET="CESIUM3DTILES_1/Case study 2 - Heinenoord"
+#! />
+#! </WRITER_DATASETS>
+#! <CONNECTIONS>
+#! <CONNECTION
+#!   NAME="case_heinenoord"
+#!   TYPE="DATABASE"
+#!   FAMILY="PostgreSQL"
+#!   USAGE="PUBLISHED"
+#! />
+#! </CONNECTIONS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_POSTGIS_3 FMT:POSTGIS%FAMILY:PostgreSQL Connection:"
+#!   DEFAULT_VALUE="case_heinenoord"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_CESIUM3DTILES Destination Cesium 3D Tiles Folder:"
+#!   DEFAULT_VALUE="C:\Users\rohit\Documents\Rohit\GEO2020\Case studies\Case study 2 - Heinenoord"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJkYkNvbm5lY3Rpb25zIiwiZmFtaWx5IjoiUG9zdGdyZVNRTCIsImZvcm1hdCI6IlBPU1RHSVMifSwiZGVmYXVsdFZhbHVlIjoiY2FzZV9oZWluZW5vb3JkIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfUE9TVEdJU18zIiwicHJvbXB0IjoiQ29ubmVjdGlvbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiQzpcXFVzZXJzXFxyb2hpdFxcRG9jdW1lbnRzXFxSb2hpdFxcR0VPMjAyMFxcQ2FzZSBzdHVkaWVzXFxDYXNlIHN0dWR5IDIgLSBIZWluZW5vb3JkIiwiaXRlbXNUb1NlbGVjdCI6ImZvbGRlcnMiLCJuYW1lIjoiRGVzdERhdGFzZXRfQ0VTSVVNM0RUSUxFUyIsInByb21wdCI6IkRlc3RpbmF0aW9uIENlc2l1bSAzRCBUaWxlcyBGb2xkZXI6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_POSTGIS_3" 
+#!   DEFAULT_VALUE="case_heinenoord"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_POSTGIS_3 FMT:POSTGIS%FAMILY:PostgreSQL Connection:"
+#! />
+#!     <INFO NAME="DestDataset_CESIUM3DTILES" 
+#!   DEFAULT_VALUE="C:\Users\rohit\Documents\Rohit\GEO2020\Case studies\Case study 2 - Heinenoord"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI DIRNAME DestDataset_CESIUM3DTILES Destination Cesium 3D Tiles Folder:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="12"
+#!   NAME="Heinenoordtunnel"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-306.73565626281265 -106.5"
+#!   ORDER="500000000000011"
+#!   PALETTE_COLOR="Color4"
+#!   BOTTOM_RIGHT="550.2185369949168 -357.57569114152682"
+#!   BOUNDING_RECT="-306.73565626281265 -106.5 856.95419325772946 251.07569114152682"
+#!   STICKY="true"
+#!   COLOUR="0.85098039215686272,0.92941176470588238,0.60392156862745094,1"
+#!   CONTENTS="22 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="13"
+#!   NAME="Parcels"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-306.73565626281265 -597.96271039633473"
+#!   ORDER="500000000000012"
+#!   PALETTE_COLOR="Color5"
+#!   BOTTOM_RIGHT="550.78675786757856 -856.37875609525327"
+#!   BOUNDING_RECT="-306.73565626281265 -597.96271039633473 857.52241413039121 258.41604569891854"
+#!   STICKY="true"
+#!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
+#!   CONTENTS="21 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="14"
+#!   NAME="Colour"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="674.50762507625052 -106.5"
+#!   ORDER="500000000000013"
+#!   PALETTE_COLOR="Color6"
+#!   BOTTOM_RIGHT="1309.7586933339799 -1059.6345313453135"
+#!   BOUNDING_RECT="674.50762507625052 -106.5 635.25106825772946 953.13453134531346"
+#!   STICKY="true"
+#!   COLOUR="0.59215686274509804,0.8901960784313725,0.90980392156862744,1"
+#!   CONTENTS="5 4 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="15"
+#!   NAME="Cesium 3D Tiles"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1427.641156411564 -106.5"
+#!   ORDER="500000000000014"
+#!   PALETTE_COLOR="Color7"
+#!   BOTTOM_RIGHT="2237.5953496692937 -406.50300003000041"
+#!   BOUNDING_RECT="1427.641156411564 -106.5 809.95419325772946 300.00300003000041"
+#!   STICKY="true"
+#!   COLOUR="0.59215686274509804,0.75294117647058822,0.90980392156862744,1"
+#!   CONTENTS="17 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="16"
+#!   NAME="Cesium 3D Tiles"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1433.6080860808606 -603.37996879968796"
+#!   ORDER="500000000000015"
+#!   PALETTE_COLOR="Color8"
+#!   BOTTOM_RIGHT="2237.5953496692937 -909.63303133031332"
+#!   BOUNDING_RECT="1433.6080860808606 -603.37996879968796 803.98726358843328 306.25306253062536"
+#!   STICKY="true"
+#!   COLOUR="0.62352941176470589,0.5725490196078431,0.8784313725490196,1"
+#!   CONTENTS="18 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="GeometryColorSetter"
+#!   VERSION="2"
+#!   POSITION="762.50762507625052 -719.6287812878129"
+#!   BOUNDING_RECT="762.50762507625052 -719.6287812878129 497.25106825772946 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22346"
+#! >
+#!     <OUTPUT_FEAT NAME="COLORED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="globalid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="objecttype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="longname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="compositiontype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="interiororexteriorspace" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="elevationwithflooring" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="annotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="axis" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="party" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rights" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="restrictions" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="responsibilities" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNMATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="globalid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="objecttype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="longname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="compositiontype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="interiororexteriorspace" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="elevationwithflooring" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="annotation" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="axis" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="party" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="rights" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="restrictions" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="responsibilities" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="globalid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="objecttype" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="longname" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="compositiontype" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="interiororexteriorspace" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="elevationwithflooring" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="annotation" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="axis" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="body" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="party" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="rights" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="restrictions" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="responsibilities" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ALPHA" PARM_VALUE="0.5"/>
+#!     <XFORM_PARM PARM_NAME="FILL_COLOR" PARM_VALUE="1,1,0"/>
+#!     <XFORM_PARM PARM_NAME="GQUERY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GQUERY_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Fixed"/>
+#!     <XFORM_PARM PARM_NAME="MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RANDOM_TRAIT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="REC" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="SIDE" PARM_VALUE="Both"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryColorSetter_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="GeometryColorSetter"
+#!   VERSION="2"
+#!   POSITION="762.50762507625052 -222.74881248812488"
+#!   BOUNDING_RECT="762.50762507625052 -222.74881248812488 461.00106825772946 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22346"
+#! >
+#!     <OUTPUT_FEAT NAME="COLORED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="globalid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="objecttype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="compositiontype" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="annotation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="axis" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="party" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rights" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="restrictions" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="responsibilities" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNMATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="globalid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="objecttype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="compositiontype" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="annotation" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="axis" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="party" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="rights" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="restrictions" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="responsibilities" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="globalid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="objecttype" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="compositiontype" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="annotation" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="axis" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="body" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="party" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="rights" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="restrictions" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="responsibilities" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ALPHA" PARM_VALUE="0.5"/>
+#!     <XFORM_PARM PARM_NAME="FILL_COLOR" PARM_VALUE="0.666667,1,1"/>
+#!     <XFORM_PARM PARM_NAME="GQUERY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GQUERY_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Fixed"/>
+#!     <XFORM_PARM PARM_NAME="MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RANDOM_TRAIT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="REC" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="SIDE" PARM_VALUE="Both"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryColorSetter"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="22"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 COLORED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 COLORED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 39
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_POSTGIS_2,POSTGIS_IN_FME_CONNECTION_GROUP_POSTGIS_2,POSTGIS_IN_FME_GROUP_NAMED1_POSTGIS_2,POSTGIS_IN_WHERE_CLAUSE_POSTGIS_2,POSTGIS_IN_USE_SEARCH_ENVELOPE_POSTGIS_2,POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_2,POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_2,POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_2,POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_2,POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_2,POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_2,POSTGIS_IN_SEARCH_METHOD_POSTGIS_2,POSTGIS_IN_ADVANCED_POSTGIS_2,POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_2,POSTGIS_IN_BEGIN_SQL_POSTGIS_2,POSTGIS_IN_END_SQL_POSTGIS_2,POSTGIS_IN_SCHEMAS_FOR_TABLE_LISTING_POSTGIS_2,DestDataset_CESIUM3DTILES_1,CESIUM3DTILES_OUT_WRITER_PARAMS_CESIUM3DTILES_1,CESIUM3DTILES_OUT_MAX_FACES_PER_TILE_CESIUM3DTILES_1,CESIUM3DTILES_OUT_FME_GROUP_NAMED1_CESIUM3DTILES_1,CESIUM3DTILES_OUT_TEXTURE_FORMAT_CHOICES_CESIUM3DTILES_1,CESIUM3DTILES_OUT_CREATE_ATLAS_TEXTURES_CESIUM3DTILES_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_POSTGIS_3 case_heinenoord
+
+DEFAULT_MACRO DestDataset_CESIUM3DTILES C:\Users\rohit\Documents\Rohit\GEO2020\Case studies\Case study 2 - Heinenoord
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_POSTGIS_3)} == {}} { puts_real {Parameter 'SourceDataset_POSTGIS_3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CESIUM3DTILES)} == {}} { puts_real {Parameter 'DestDataset_CESIUM3DTILES' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} POSTGIS
+MULTI_READER_KEYWORD{0} POSTGIS_2
+MULTI_READER_GEN_DIRECTIVES{0} CLIP_TO_ENVELOPE,NO,POSTGIS_EXPOSE_FORMAT_ATTRS,,CREATE_FEATURE_TABLES_FROM_DATA,Yes,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MINX,0,FEATURES_PER_FETCH,10000,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,NAMED_CONNECTION,case_heinenoord,ADVANCED,,END_SQL,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINY,0,BEGIN_SQL,,SCHEMAS_FOR_TABLE_LISTING,,READ_TIME_WITH_TIMEZONE,Yes,USE_TRUE_POSTGIS_TYPES,yes,WHERE_CLAUSE,,TABLELIST,public.parcels_heinenoord<space>public.tunnel_heinenoord,SEARCH_ENVELOPE_MAXX,0,DISABLE_COLLECTION_SPLITTING,yes,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,SEARCH_METHOD,MBR_OVERLAPS,_MERGE_SCHEMAS,YES,SEARCH_ENVELOPE_MAXY,0
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} CESIUM3DTILES
+MULTI_WRITER_KEYWORD{0} CESIUM3DTILES_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "POSTGIS_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER POSTGIS POSTGIS_2
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_POSTGIS_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER POSTGIS POSTGIS_2
+DEFAULT_MACRO SourceDataset_POSTGIS_2 $(SourceDataset_POSTGIS_3)
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_POSTGIS_2 FMT:POSTGIS Connection:
+DEFAULT_MACRO POSTGIS_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_POSTGIS_2 Yes
+POSTGIS_2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(POSTGIS_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_POSTGIS_2)"
+DEFAULT_MACRO POSTGIS_IN_READ_TIME_WITH_TIMEZONE_POSTGIS_2 Yes
+POSTGIS_2_READ_TIME_WITH_TIMEZONE "$(POSTGIS_IN_READ_TIME_WITH_TIMEZONE_POSTGIS_2)"
+DEFAULT_MACRO POSTGIS_IN_DISABLE_COLLECTION_SPLITTING_POSTGIS_2 yes
+POSTGIS_2_DISABLE_COLLECTION_SPLITTING "$(POSTGIS_IN_DISABLE_COLLECTION_SPLITTING_POSTGIS_2)"
+DEFAULT_MACRO POSTGIS_IN_USE_TRUE_POSTGIS_TYPES_POSTGIS_2 yes
+POSTGIS_2_USE_TRUE_POSTGIS_TYPES "$(POSTGIS_IN_USE_TRUE_POSTGIS_TYPES_POSTGIS_2)"
+DEFAULT_MACRO POSTGIS_IN_FME_CONNECTION_GROUP_POSTGIS_2 
+GUI OPTIONAL DISCLOSUREGROUP POSTGIS_IN_FME_CONNECTION_GROUP_POSTGIS_2 POSTGIS_IN_NAMED_CONNECTION%POSTGIS_IN_SCHEMAS_FOR_TABLE_LISTING_POSTGIS_2 Database Connection
+DEFAULT_MACRO POSTGIS_IN_FME_GROUP_NAMED1_POSTGIS_2 
+GUI OPTIONAL DISCLOSUREGROUP POSTGIS_IN_FME_GROUP_NAMED1_POSTGIS_2 POSTGIS_IN_TABLELIST%POSTGIS_IN_WHERE_CLAUSE_POSTGIS_2 Constraints
+DEFAULT_MACRO POSTGIS_IN_WHERE_CLAUSE_POSTGIS_2 
+POSTGIS_2_WHERE_CLAUSE "$(POSTGIS_IN_WHERE_CLAUSE_POSTGIS_2)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG POSTGIS_IN_WHERE_CLAUSE_POSTGIS_2 MODE,WHERE;FORMAT,POSTGIS WHERE Clause:
+DEFAULT_MACRO POSTGIS_IN_EXPOSE_ATTRS_GROUP_POSTGIS_2 
+POSTGIS_2_EXPOSE_ATTRS_GROUP "$(POSTGIS_IN_EXPOSE_ATTRS_GROUP_POSTGIS_2)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO POSTGIS_IN_USE_SEARCH_ENVELOPE_POSTGIS_2 NO
+POSTGIS_2_USE_SEARCH_ENVELOPE "$(POSTGIS_IN_USE_SEARCH_ENVELOPE_POSTGIS_2)"
+GUI ACTIVEDISCLOSUREGROUP POSTGIS_IN_USE_SEARCH_ENVELOPE_POSTGIS_2 POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_2%POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_2%POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_2%POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_2%POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_2%POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_2%POSTGIS_IN_SEARCH_METHOD_POSTGIS_2%POSTGIS_IN_SEARCH_METHOD_FILTER%POSTGIS_IN_SEARCH_ORDER%POSTGIS_IN_SEARCH_FEATURE%POSTGIS_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_2 <Unused>,0 
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_2 0
+POSTGIS_2_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_2)"
+GUI OPTIONAL FLOAT POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_2 Minimum X:
+# ===========================================================================
+GUI LOOKUP POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_2 <Unused>,0 
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_2 0
+POSTGIS_2_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_2)"
+GUI OPTIONAL FLOAT POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_2 Minimum Y:
+# ===========================================================================
+GUI LOOKUP POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_2 <Unused>,0 
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_2 0
+POSTGIS_2_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_2)"
+GUI OPTIONAL FLOAT POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_2 Maximum X:
+# ===========================================================================
+GUI LOOKUP POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_2 <Unused>,0 
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_2 0
+POSTGIS_2_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_2)"
+GUI OPTIONAL FLOAT POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_2 Maximum Y:
+# ===========================================================================
+GUI LOOKUP POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_2 <Unused>, 
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_2 
+POSTGIS_2_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_2)"
+GUI OPTIONAL COORDSYS POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_2 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_2 <Unused>,NO 
+DEFAULT_MACRO POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_2 NO
+POSTGIS_2_CLIP_TO_ENVELOPE "$(POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_2)"
+GUI OPTIONAL CHECKBOX POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_2 YES%NO Clip to Search Envelope
+DEFAULT_MACRO POSTGIS_IN_SEARCH_METHOD_POSTGIS_2 MBR_OVERLAPS
+POSTGIS_2_SEARCH_METHOD "$(POSTGIS_IN_SEARCH_METHOD_POSTGIS_2)"
+GUI LOOKUP_CHOICE POSTGIS_IN_SEARCH_METHOD_POSTGIS_2 MBR<space>Overlaps,MBR_OVERLAPS%Contains,CONTAINS%Disjoint,DISJOINT%Equals,EQUALS%Intersects,INTERSECTS%Overlaps,OVERLAPS%Touches,TOUCHES%Within,WITHIN Search Method:
+GUI LOOKUP POSTGIS_IN_SEARCH_METHOD_POSTGIS_2 <Unused>,MBR_OVERLAPS 
+DEFAULT_MACRO POSTGIS_IN_ADVANCED_POSTGIS_2 
+GUI OPTIONAL DISCLOSUREGROUP POSTGIS_IN_ADVANCED_POSTGIS_2 POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_2%POSTGIS_IN_BEGIN_SQL_POSTGIS_2%POSTGIS_IN_END_SQL_POSTGIS_2 Advanced
+DEFAULT_MACRO POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_2 10000
+POSTGIS_2_FEATURES_PER_FETCH "$(POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_2)"
+GUI FLOAT POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_2 Number Of Records To Fetch At A Time
+DEFAULT_MACRO POSTGIS_IN_BEGIN_SQL_POSTGIS_2 
+POSTGIS_2_BEGIN_SQL "$(POSTGIS_IN_BEGIN_SQL_POSTGIS_2)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG POSTGIS_IN_BEGIN_SQL_POSTGIS_2 MODE,SQL;FORMAT,POSTGIS SQL To Run Before Read
+DEFAULT_MACRO POSTGIS_IN_END_SQL_POSTGIS_2 
+POSTGIS_2_END_SQL "$(POSTGIS_IN_END_SQL_POSTGIS_2)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG POSTGIS_IN_END_SQL_POSTGIS_2 MODE,SQL;FORMAT,POSTGIS SQL To Run After Read
+DEFAULT_MACRO POSTGIS_IN_CREATE_FEATURE_TABLES_FROM_DATA_POSTGIS_2 Yes
+POSTGIS_2_CREATE_FEATURE_TABLES_FROM_DATA "$(POSTGIS_IN_CREATE_FEATURE_TABLES_FROM_DATA_POSTGIS_2)"
+# ============================================================================
+DEFAULT_MACRO POSTGIS_IN_ATTRIBUTE_READING_POSTGIS_2 DEFLINE_ATTRS
+POSTGIS_2_ATTRIBUTE_READING "$(POSTGIS_IN_ATTRIBUTE_READING_POSTGIS_2)"
+# ============================================================================
+POSTGIS_2_GENERATE_FME_BUILD_NUM 22346
+DEFAULT_MACRO POSTGIS_IN_SCHEMAS_FOR_TABLE_LISTING_POSTGIS_2 
+GUI OPTIONAL TEXT POSTGIS_IN_SCHEMAS_FOR_TABLE_LISTING_POSTGIS_2 Schemas for Tables:
+POSTGIS_2_SCHEMAS_FOR_TABLE_LISTING $(POSTGIS_IN_SCHEMAS_FOR_TABLE_LISTING_POSTGIS_2)
+POSTGIS_2_DATASET "$(SourceDataset_POSTGIS_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CESIUM3DTILES_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER CESIUM3DTILES CESIUM3DTILES_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CESIUM3DTILES_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CESIUM3DTILES CESIUM3DTILES_1
+DEFAULT_MACRO DestDataset_CESIUM3DTILES_1 $(DestDataset_CESIUM3DTILES)
+GUI DIRNAME DestDataset_CESIUM3DTILES_1 Destination Cesium 3D Tiles Folder:
+DEFAULT_MACRO CESIUM3DTILES_OUT_WRITER_PARAMS_CESIUM3DTILES_1 
+GUI OPTIONAL DISCLOSUREGROUP CESIUM3DTILES_OUT_WRITER_PARAMS_CESIUM3DTILES_1 CESIUM3DTILES_OUT_MAX_FACES_PER_TILE_CESIUM3DTILES_1 Tile Settings
+DEFAULT_MACRO CESIUM3DTILES_OUT_MAX_FACES_PER_TILE_CESIUM3DTILES_1 1000
+CESIUM3DTILES_1_MAX_FACES_PER_TILE "$(CESIUM3DTILES_OUT_MAX_FACES_PER_TILE_CESIUM3DTILES_1)"
+GUI RANGE_SLIDER CESIUM3DTILES_OUT_MAX_FACES_PER_TILE_CESIUM3DTILES_1 RANGE:[100,10000]%INCR,1000%PRECISION:0%ON Maximum Number of Triangle Faces Per Tile
+DEFAULT_MACRO CESIUM3DTILES_OUT_FME_GROUP_NAMED1_CESIUM3DTILES_1 
+GUI OPTIONAL DISCLOSUREGROUP CESIUM3DTILES_OUT_FME_GROUP_NAMED1_CESIUM3DTILES_1 CESIUM3DTILES_OUT_TEXTURE_FORMAT_CHOICES_CESIUM3DTILES_1%CESIUM3DTILES_OUT_CREATE_ATLAS_TEXTURES_CESIUM3DTILES_1 Texture Settings
+DEFAULT_MACRO CESIUM3DTILES_OUT_TEXTURE_FORMAT_CHOICES_CESIUM3DTILES_1 WEBP
+CESIUM3DTILES_1_TEXTURE_FORMAT_CHOICES "$(CESIUM3DTILES_OUT_TEXTURE_FORMAT_CHOICES_CESIUM3DTILES_1)"
+GUI ACTIVECHOICE_LOOKUP CESIUM3DTILES_OUT_TEXTURE_FORMAT_CHOICES_CESIUM3DTILES_1 "\"JPEG/PNG Only\",TRADITIONAL"%"\"WebP Only\",WEBP"%"\"Both JPEG/PNG and WebP\",BOTH" Texture Formats:
+DEFAULT_MACRO CESIUM3DTILES_OUT_CREATE_ATLAS_TEXTURES_CESIUM3DTILES_1 YES
+CESIUM3DTILES_1_CREATE_ATLAS_TEXTURES "$(CESIUM3DTILES_OUT_CREATE_ATLAS_TEXTURES_CESIUM3DTILES_1)"
+GUI ACTIVECHOICE_LOOKUP CESIUM3DTILES_OUT_CREATE_ATLAS_TEXTURES_CESIUM3DTILES_1 Yes,YES%No,NO Create Atlas Textures:
+DEFAULT_MACRO CESIUM3DTILES_OUT_COORDINATE_SYSTEM_GRANULARITY_CESIUM3DTILES_1 FEATURE
+CESIUM3DTILES_1_COORDINATE_SYSTEM_GRANULARITY "$(CESIUM3DTILES_OUT_COORDINATE_SYSTEM_GRANULARITY_CESIUM3DTILES_1)"
+DEFAULT_MACRO CESIUM3DTILES_OUT_ALLOW_MIXED_GEOM_TILESETS_CESIUM3DTILES_1 NO
+CESIUM3DTILES_1_ALLOW_MIXED_GEOM_TILESETS "$(CESIUM3DTILES_OUT_ALLOW_MIXED_GEOM_TILESETS_CESIUM3DTILES_1)"
+DEFAULT_MACRO CESIUM3DTILES_OUT_DEFAULT_CRS_CESIUM3DTILES_1 EPSG:4326
+CESIUM3DTILES_1_DEFAULT_CRS "$(CESIUM3DTILES_OUT_DEFAULT_CRS_CESIUM3DTILES_1)"
+# ============================================================================
+CESIUM3DTILES_1_GENERATE_FME_BUILD_NUM 22346
+CESIUM3DTILES_1_DATASET "$(DestDataset_CESIUM3DTILES_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)cs2_postgis2cesium3dtiles_(5).log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2022.0.1.0 (20220602 - Build 22346 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_POSTGIS_2 POSTGIS_2
+DEFAULT_MACRO DATASET_KEYWORD_CESIUM3DTILES_1 CESIUM3DTILES_1
+# -------------------------------------------------------------------------
+
+POSTGIS_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME cs2_postgis2cesium3dtiles_(5)
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_POSTGIS_2)   INPUT FEATURE_TYPE *    ROUTE POSTGIS POSTGIS_2::public.parcels_heinenoord multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_2) TO FME_GENERIC ::public.parcels_heinenoord ALIAS_GEOMETRY    ROUTE POSTGIS POSTGIS_2::public.tunnel_heinenoord multi_reader_keyword,$(DATASET_KEYWORD_POSTGIS_2) TO FME_GENERIC ::public.tunnel_heinenoord ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+POSTGIS_2_MERGE_DEF POSTGIS_2::public.parcels_heinenoord EXACT public.parcels_heinenoord DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,globalid,char<openparen>22<closeparen>,name,text,description,text,objecttype,text,longname,text,compositiontype,text,interiororexteriorspace,text,elevationwithflooring,float8,annotation,text,axis,text,body,text,ifc_parent_id,text,ifc_parent_unique_id,text,ifc_type_object_id,text,ifc_unique_id,text,party,varchar<openparen>80<closeparen>,rights,varchar<openparen>80<closeparen>,restrictions,varchar<openparen>80<closeparen>,responsibilities,varchar<openparen>80<closeparen>
+POSTGIS_2_MERGE_DEF POSTGIS_2::public.tunnel_heinenoord EXACT public.tunnel_heinenoord DEFLINE postgis_sql_where_clause,,postgis_sql_statement,,globalid,char<openparen>22<closeparen>,name,text,description,text,objecttype,text,tag,text,compositiontype,text,annotation,text,axis,text,body,text,ifc_parent_id,text,ifc_parent_unique_id,text,ifc_type_object_id,text,ifc_unique_id,text,party,varchar<openparen>80<closeparen>,rights,varchar<openparen>80<closeparen>,restrictions,varchar<openparen>80<closeparen>,responsibilities,varchar<openparen>80<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "public.parcels_heinenoord_POSTGIS_2 Splitter"    INPUT FEATURE_TYPE public.parcels_heinenoord    OUTPUT FEATURE_TYPE public.parcels_heinenoord_POSTGIS_2
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "public.tunnel_heinenoord_POSTGIS_2 Splitter"    INPUT FEATURE_TYPE public.tunnel_heinenoord    OUTPUT FEATURE_TYPE public.tunnel_heinenoord_POSTGIS_2
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+INCLUDE [    puts "MACRO ALPHA_RAND 0.5";    if { ( "MANUAL" == "MANUAL" )  } {       puts "MACRO IS_FIXED {*}";       puts "MACRO NOT_FIXED NOT_THIS_TIME";    } else {       puts "MACRO IS_FIXED NOT_THIS_TIME";       puts "MACRO NOT_FIXED {*}";    } ]
+FACTORY_DEF $(NOT_FIXED) GQueryFactory    FACTORY_NAME { GeometryColorSetter_GQuery }    INPUT  FEATURE_TYPE public.tunnel_heinenoord_POSTGIS_2    ROUTE_UNMATCHED_FEATURES YES    PARAMETER { "<Unused>" "$(ALPHA_RAND)" "DEFINITION_BOTH" }    ACTION SET_APPEARANCE_RANDOM_COLOR    OUTPUT { RESULT FEATURE_TYPE GeometryColorSetter_COLORED        }    OUTPUT { UNTOUCHED FEATURE_TYPE GeometryColorSetter_<REJECTED>       fme_rejection_code INVALID_GEOMETRY_TYPE        }
+FACTORY_DEF $(IS_FIXED) TeeFactory    FACTORY_NAME { GeometryColorSetter_Router }    INPUT  FEATURE_TYPE public.tunnel_heinenoord_POSTGIS_2    OUTPUT { FEATURE_TYPE GeometryColorSetter___InputGeoms___ }
+FACTORY_DEF $(IS_FIXED) CreationFactory    FACTORY_NAME { GeometryColorSetter_SetFillColor }    CREATE_AT_END NO    OUTPUT { FEATURE_TYPE GeometryColorSetter___FillColor___       fme_appearance_style_diffuse_color "0.666667,1,1"       fme_appearance_style_alpha "0.5" }
+FACTORY_DEF $(IS_FIXED) SharedObjectFactory    FACTORY_NAME { GeometryColorSetter_AddRefs }    INPUT { DEFINITION_BOTH FEATURE_TYPE GeometryColorSetter___FillColor___ }    INPUT { REFERENCER FEATURE_TYPE GeometryColorSetter___InputGeoms___ }    MODE ADD    SHARED_OBJECT_TYPE APPEARANCE    ADD_AS_ATTR_FRONT ___myNewFrontAppearance    ADD_AS_ATTR_BACK ___myNewBackAppearance    OUTPUT { INVALID_GEOMETRY FEATURE_TYPE GeometryColorSetter_<REJECTED>       fme_rejection_code INVALID_GEOMETRY_TYPE        }    OUTPUT { SUCCESSFUL FEATURE_TYPE GeometryColorSetter___TaggedGeoms___ }
+FACTORY_DEF $(IS_FIXED) GQueryFactory    FACTORY_NAME { GeometryColorSetter_GQueryFixed }    INPUT { FEATURE_TYPE GeometryColorSetter___TaggedGeoms___ }    ROUTE_UNMATCHED_FEATURES YES    ACTION SET_APPEARANCE_NO_TEXTURE    PARAMETER { @Value(___myNewFrontAppearance) @Value(___myNewBackAppearance) YES }    OUTPUT { RESULT FEATURE_TYPE GeometryColorSetter_COLORED       @RemoveAttributes(___myNewFrontAppearance,___myNewBackAppearance)        }    OUTPUT { UNTOUCHED FEATURE_TYPE GeometryColorSetter_<REJECTED>       @RemoveAttributes(___myNewFrontAppearance,___myNewBackAppearance)       fme_rejection_code INVALID_GEOMETRY_TYPE        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME GeometryColorSetter_<Rejected> INPUT FEATURE_TYPE GeometryColorSetter_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, GeometryColorSetter<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+INCLUDE [    puts "MACRO ALPHA_RAND 0.5";    if { ( "MANUAL" == "MANUAL" )  } {       puts "MACRO IS_FIXED {*}";       puts "MACRO NOT_FIXED NOT_THIS_TIME";    } else {       puts "MACRO IS_FIXED NOT_THIS_TIME";       puts "MACRO NOT_FIXED {*}";    } ]
+FACTORY_DEF $(NOT_FIXED) GQueryFactory    FACTORY_NAME { GeometryColorSetter_2_GQuery }    INPUT  FEATURE_TYPE public.parcels_heinenoord_POSTGIS_2    ROUTE_UNMATCHED_FEATURES YES    PARAMETER { "<Unused>" "$(ALPHA_RAND)" "DEFINITION_BOTH" }    ACTION SET_APPEARANCE_RANDOM_COLOR    OUTPUT { RESULT FEATURE_TYPE GeometryColorSetter_2_COLORED        }    OUTPUT { UNTOUCHED FEATURE_TYPE GeometryColorSetter_2_<REJECTED>       fme_rejection_code INVALID_GEOMETRY_TYPE        }
+FACTORY_DEF $(IS_FIXED) TeeFactory    FACTORY_NAME { GeometryColorSetter_2_Router }    INPUT  FEATURE_TYPE public.parcels_heinenoord_POSTGIS_2    OUTPUT { FEATURE_TYPE GeometryColorSetter_2___InputGeoms___ }
+FACTORY_DEF $(IS_FIXED) CreationFactory    FACTORY_NAME { GeometryColorSetter_2_SetFillColor }    CREATE_AT_END NO    OUTPUT { FEATURE_TYPE GeometryColorSetter_2___FillColor___       fme_appearance_style_diffuse_color "1,1,0"       fme_appearance_style_alpha "0.5" }
+FACTORY_DEF $(IS_FIXED) SharedObjectFactory    FACTORY_NAME { GeometryColorSetter_2_AddRefs }    INPUT { DEFINITION_BOTH FEATURE_TYPE GeometryColorSetter_2___FillColor___ }    INPUT { REFERENCER FEATURE_TYPE GeometryColorSetter_2___InputGeoms___ }    MODE ADD    SHARED_OBJECT_TYPE APPEARANCE    ADD_AS_ATTR_FRONT ___myNewFrontAppearance    ADD_AS_ATTR_BACK ___myNewBackAppearance    OUTPUT { INVALID_GEOMETRY FEATURE_TYPE GeometryColorSetter_2_<REJECTED>       fme_rejection_code INVALID_GEOMETRY_TYPE        }    OUTPUT { SUCCESSFUL FEATURE_TYPE GeometryColorSetter_2___TaggedGeoms___ }
+FACTORY_DEF $(IS_FIXED) GQueryFactory    FACTORY_NAME { GeometryColorSetter_2_GQueryFixed }    INPUT { FEATURE_TYPE GeometryColorSetter_2___TaggedGeoms___ }    ROUTE_UNMATCHED_FEATURES YES    ACTION SET_APPEARANCE_NO_TEXTURE    PARAMETER { @Value(___myNewFrontAppearance) @Value(___myNewBackAppearance) YES }    OUTPUT { RESULT FEATURE_TYPE GeometryColorSetter_2_COLORED       @RemoveAttributes(___myNewFrontAppearance,___myNewBackAppearance)        }    OUTPUT { UNTOUCHED FEATURE_TYPE GeometryColorSetter_2_<REJECTED>       @RemoveAttributes(___myNewFrontAppearance,___myNewBackAppearance)       fme_rejection_code INVALID_GEOMETRY_TYPE        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME GeometryColorSetter_2_<Rejected> INPUT FEATURE_TYPE GeometryColorSetter_2_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, GeometryColorSetter_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC GeometryColorSetter_COLORED TO CESIUM3DTILES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>public.tunnel_heinenoord<closeparen> GEOMETRY    ROUTE FME_GENERIC GeometryColorSetter_2_COLORED TO CESIUM3DTILES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>public.parcels_heinenoord<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+CESIUM3DTILES_1_DEF public.parcels_heinenoord   cesium3dtiles_type           cesium_3d_object   globalid                     string   name                         string   description                  string   objecttype                   string   longname                     string   compositiontype              string   interiororexteriorspace      string   elevationwithflooring        float   annotation                   string   axis                         string   body                         string   ifc_parent_id                string   ifc_parent_unique_id         string   ifc_type_object_id           string   ifc_unique_id                string   party                        string   rights                       string   restrictions                 string   responsibilities             string
+# -------------------------------------------------------------------------
+CESIUM3DTILES_1_DEF public.tunnel_heinenoord   cesium3dtiles_type           cesium_3d_object   globalid                     string   name                         string   description                  string   objecttype                   string   tag                          string   compositiontype              string   annotation                   string   axis                         string   body                         string   ifc_parent_id                string   ifc_parent_unique_id         string   ifc_type_object_id           string   ifc_unique_id                string   party                        string   rights                       string   restrictions                 string   responsibilities             string
