@@ -3,7 +3,10 @@
 This repository contains the data of the case studies that were implemented and described in the thesis <br>
 'Modelling the legal spaces of 3D underground objects in a 3D Land Administration System'.
 
-There are two cases: case 1. Sewage pipes in Almere and case 2. Heinenoordtunnel
+There are two cases: <br> 
+<br>
+- case 1. Sewage pipes in Almere <br>
+- case 2. Heinenoordtunnel <br>
 
 In both folders of the cases are all the filed to recreate the steps written in Chapter 5. Case studies of the thesis.
 
