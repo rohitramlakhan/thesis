@@ -1,0 +1,1726 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" "C:\Users\rohit\Documents\Rohit\GEO2020\Case studies\Case study 3 - Barendrecht\cs2_ifc2ifc_(1).fmw"
+#          --SourceDataset_IFC "$(FME_MF_DIR_USERTYPED)NAR_Heinenoordtunnel.ifc"
+#          --DestDataset_IFC "$(FME_MF_DIR_USERTYPED)NAR_Heinenoordtunnel_simplified.ifc"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="3306.07 1331.06"
+#!   DOC_TOP_LEFT="-305.241 -1337.53"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="22346"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="ff0d8590-5108-4043-9e2e-d969a6817231"
+#!   FME_DOCUMENT_PRIORGUID="03991e4d-f0cc-4942-8af3-639455a5cff4,845b88f6-c39a-47c7-9d81-d9cbadeeb331,b2c33a8f-ab73-43c4-807f-9e6e152778c9,a8f0d98f-54c6-4dad-ab61-0317b21c6e87,e13a7210-0edf-453f-8ceb-51cdc4b9499e,0fb47c59-f635-43c0-a59c-91d581391385,4438c775-224f-40b9-9350-f3bafeb7ddbf,2b2f9a73-bf5a-4203-b51e-ee59a9277043,d29b09fa-590f-4c1a-b79a-45930f4245cc,e7088dc5-6062-4904-bdc3-4433e4e72192,b287b17a-f0a1-49dd-8e59-7a71bc38e6f2,01060316-3a3d-4c76-b240-0651eadda494,6de3c259-c598-424c-8cf4-0fccb514b458,5b91aa6e-1e74-4268-bab1-c98ca419bc2b,c9d2673b-d76b-442b-9fd1-e66e05eada41,7f8893ff-9af7-490c-b3d9-6fe20d7b2e2c,5ac972f5-8119-425c-b9af-9561c6b50c04,41e95277-c31f-4d93-ac38-90e56e193f0b,e62a8cc0-c8e7-4f4f-9549-ab99703efdaf,b9d2f17c-b311-4f5e-b521-7739917004d3,fd5153c3-39da-492e-bc48-46a43a64dbd0,542cd685-51be-4452-b083-cb2adc44e896"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2022.0.1.0 (20220602 - Build 22346 - WIN64)"
+#!   LAST_SAVE_DATE="2022-06-14T08:53:26"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="39"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-701.129 633.019"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="78"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="IFC"
+#!   DATASET="$(SourceDataset_IFC)"
+#!   KEYWORD="IFC_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number fme_rotation number fme_secondary_axis number fme_start_angle number fme_sweep_angle number fme_text_size number fme_text_string char(50) fme_type char(50) ifc_attribute_type string ifc_contains{} instance ifc_context_dimension string ifc_context_precision string ifc_context_type string ifc_decomposes instance ifc_entity_type string ifc_id string ifc_instance_name instance ifc_is_contained_in instance ifc_is_decomposed_by{} instance ifc_material.layer_set_name string ifc_material.layer{}.is_ventilated string ifc_material.layer{}.name string ifc_material.layer{}.thickness string ifc_material.material{}.name string ifc_material.name string ifc_native_attribute_type string ifc_object_placement instance ifc_parent_id string ifc_parent_unique_id string ifc_representation instance ifc_representation_identifier string ifc_representations{}.identifier string ifc_representations{}.type string ifc_type string ifc_unique_id string multi_reader_full_id int multi_reader_id int multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="22346"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Object1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Object"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the IFC file(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="IFC"
+#!   DATASET="$(DestDataset_IFC)"
+#!   KEYWORD="IFC_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="255"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number fme_rotation number fme_secondary_axis number fme_start_angle number fme_sweep_angle number fme_text_size number fme_text_string char(50) fme_type char(50) ifc_attribute_type string ifc_contains{} instance ifc_context_dimension string ifc_context_precision string ifc_context_type string ifc_decomposes instance ifc_entity_type string ifc_id string ifc_instance_name instance ifc_is_contained_in instance ifc_is_decomposed_by{} instance ifc_material.layer_set_name string ifc_material.layer{}.is_ventilated string ifc_material.layer{}.name string ifc_material.layer{}.thickness string ifc_material.material{}.name string ifc_material.name string ifc_native_attribute_type string ifc_object_placement instance ifc_parent_id string ifc_parent_unique_id string ifc_representation instance ifc_representation_identifier string ifc_representations{}.identifier string ifc_representations{}.type string ifc_type string ifc_unique_id string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="22346"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Object1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Object"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the IFC file(s)"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bool"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="enumeration"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="generic"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real(width)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real(11)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="select"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="instance"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geometry"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bool"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="enumeration"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="generic"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real(width)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real(11)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="select"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="instance"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geometry"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IFC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(1)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="IFC"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_bounding_box"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ifc_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_bounding_box"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="IFC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ifc_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="IFC"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="IfcBuilding"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="11"
+#!   FEAT_GEOMTYPE="ifc_no_geom ifc_point ifc_line ifc_polygon ifc_surface ifc_solid ifc_text ifc_bounding_box ifc_collection"
+#!   POSITION="-13.677757365809214 -354.29795014390544"
+#!   BOUNDING_RECT="-13.677757365809214 -354.29795014390544 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="IFC_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GlobalId" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ObjectType" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LongName" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CompositionType" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ElevationOfRefHeight" ATTR_TYPE="real" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ElevationOfTerrain" ATTR_TYPE="real" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Purpose" ATTR_TYPE="enumeration" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.UserDefinedPurpose" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.InternalLocation" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.AddressLines" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.PostalBox" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Town" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Region" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.PostalCode" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Country" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Body" ATTR_TYPE="geometry" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="IfcBuildingElementProxy"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="12"
+#!   FEAT_GEOMTYPE="ifc_no_geom ifc_point ifc_line ifc_polygon ifc_surface ifc_solid ifc_text ifc_bounding_box ifc_collection"
+#!   POSITION="-213.24132562353867 -606.30780407653606"
+#!   BOUNDING_RECT="-213.24132562353867 -606.30780407653606 653.56356825772946 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="IFC_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GlobalId" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ObjectType" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Tag" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CompositionType" ATTR_TYPE="enumeration" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Body" ATTR_TYPE="geometry" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="IfcProject"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="13"
+#!   FEAT_GEOMTYPE="ifc_no_geom ifc_point ifc_line ifc_polygon ifc_surface ifc_solid ifc_text ifc_bounding_box ifc_collection"
+#!   POSITION="-13.677757365809214 -167.1361672440253"
+#!   BOUNDING_RECT="-13.677757365809214 -167.1361672440253 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="IFC_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GlobalId" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ObjectType" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LongName" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Phase" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Body" ATTR_TYPE="geometry" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="IfcBuilding"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="20"
+#!   FEAT_GEOMTYPE="ifc_no_geom ifc_point ifc_line ifc_polygon ifc_surface ifc_solid ifc_text ifc_bounding_box ifc_collection"
+#!   POSITION="2437.5081886996427 -354.29795014390544"
+#!   BOUNDING_RECT="2437.5081886996427 -354.29795014390544 454 71"
+#!   ORDER="500000000000204"
+#!   COLLAPSED="true"
+#!   KEYWORD="IFC_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GlobalId" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ObjectType" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LongName" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CompositionType" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ElevationOfRefHeight" ATTR_TYPE="real" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ElevationOfTerrain" ATTR_TYPE="real" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Purpose" ATTR_TYPE="enumeration" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.UserDefinedPurpose" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.InternalLocation" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.AddressLines" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.PostalBox" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Town" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Region" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.PostalCode" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BuildingAddress.Country" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Body" ATTR_TYPE="geometry" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="IfcProject"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="23"
+#!   FEAT_GEOMTYPE="ifc_no_geom ifc_point ifc_line ifc_polygon ifc_surface ifc_solid ifc_text ifc_bounding_box ifc_collection"
+#!   POSITION="2437.5081886996427 -159.12326660219841"
+#!   BOUNDING_RECT="2437.5081886996427 -159.12326660219841 454 71"
+#!   ORDER="500000000000206"
+#!   COLLAPSED="true"
+#!   KEYWORD="IFC_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GlobalId" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ObjectType" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LongName" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Phase" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Body" ATTR_TYPE="geometry" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="IfcSpace"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="25"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="2437.5081886996427 -599.65097216583081"
+#!   BOUNDING_RECT="2437.5081886996427 -599.65097216583081 454 71"
+#!   ORDER="500000000000208"
+#!   COLLAPSED="true"
+#!   KEYWORD="IFC_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GlobalId" ATTR_TYPE="char(22)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Description" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ObjectType" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Tag" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CompositionType" ATTR_TYPE="enumeration" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Body" ATTR_TYPE="geometry" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_type_object_id" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ifc_parent_unique_id" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="IFC_1"
+#!   OVERRIDE="-IFC_1_DATASET"
+#!   DATASET="IFC_1/NAR_Heinenoordtunnel.ifc"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="IFC_2"
+#!   OVERRIDE="-IFC_2_DATASET"
+#!   DATASET="IFC_2/NAR_Heinenoordtunnel_simplified.ifc"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_IFC INCLUDE_WEB_BROWSER%Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|IFC_File(*.ifc;*.ifcxml)|*.ifc;*.ifcxml|All_files(*)|* Source Industry Foundation Class (IFC) File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)NAR_Heinenoordtunnel.ifc"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_IFC IFC_File(*.ifc)|*.ifc|All_files(*)|* Destination Industry Foundation Class (IFC) File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)NAR_Heinenoordtunnel_simplified.ifc"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUilOQVJfSGVpbmVub29yZHR1bm5lbC5pZmMiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IklGQyBGaWxlIiwiZmlsdGVyIjpbIiouaWZjIiwiKi5pZmN4bWwiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0lGQyIsInByb21wdCI6IlNvdXJjZSBJbmR1c3RyeSBGb3VuZGF0aW9uIENsYXNzIChJRkMpIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEZNRV9NRl9ESVIpTkFSX0hlaW5lbm9vcmR0dW5uZWxfc2ltcGxpZmllZC5pZmMiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IklGQyBGaWxlIiwiZmlsdGVyIjpbIiouaWZjIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9JRkMiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBJbmR1c3RyeSBGb3VuZGF0aW9uIENsYXNzIChJRkMpIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_IFC" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)NAR_Heinenoordtunnel.ifc"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_IFC INCLUDE_WEB_BROWSER%Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|IFC_File(*.ifc;*.ifcxml)|*.ifc;*.ifcxml|All_files(*)|* Source Industry Foundation Class (IFC) File(s):"
+#! />
+#!     <INFO NAME="DestDataset_IFC" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)NAR_Heinenoordtunnel_simplified.ifc"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI FILENAME DestDataset_IFC IFC_File(*.ifc)|*.ifc|All_files(*)|* Destination Industry Foundation Class (IFC) File(s):"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="17"
+#!   NAME="Selection"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="604.63127209747938 -470.08849316547844"
+#!   ORDER="500000000000155"
+#!   PALETTE_COLOR="Color4"
+#!   BOTTOM_RIGHT="1416.0760065448235 -1337.5316216734386"
+#!   BOUNDING_RECT="604.63127209747938 -470.08849316547844 811.44473444734422 867.4431285079603"
+#!   STICKY="true"
+#!   COLOUR="0.85098039215686272,0.92941176470588238,0.60392156862745094,1"
+#!   CONTENTS="16 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="36"
+#!   NAME="IFC model"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-305.24132562353867 -6.4667279025730977"
+#!   ORDER="500000000000209"
+#!   PALETTE_COLOR="Color9"
+#!   BOTTOM_RIGHT="528.32224263419084 -758.93616079017931"
+#!   BOUNDING_RECT="-305.24132562353867 -6.4667279025730977 833.56356825772946 752.46943288760622"
+#!   STICKY="true"
+#!   COLOUR="0.81568627450980391,0.5607843137254902,0.85882352941176465,1"
+#!   CONTENTS="11 12 13 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="37"
+#!   NAME="Simplified IFC model"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="2349.5081886996427 -30.505429828053892"
+#!   ORDER="500000000000210"
+#!   PALETTE_COLOR="Color1"
+#!   BOTTOM_RIGHT="3000.831290364185 -765.23201129447182"
+#!   BOUNDING_RECT="2349.5081886996427 -30.505429828053892 651.32310166454226 734.72658146641788"
+#!   STICKY="true"
+#!   COLOUR="0.59999999999999998,0.80000000000000004,0.80000000000000004,1"
+#!   CONTENTS="25 23 20 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="28"
+#!   NAME="Attributes"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1532.1923232332947 -231.28877027835131"
+#!   ORDER="500000000000214"
+#!   PALETTE_COLOR="Color8"
+#!   BOTTOM_RIGHT="2219.5734777860594 -1101.7738382512027"
+#!   BOUNDING_RECT="1532.1923232332947 -231.28877027835131 687.38115455276466 870.48506797285143"
+#!   STICKY="true"
+#!   COLOUR="0.62352941176470589,0.5725490196078431,0.8784313725490196,1"
+#!   CONTENTS="24 29 21 43 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="AttributeFilter"
+#!   VERSION="5"
+#!   POSITION="706.47096765599497 -609.87086218374213"
+#!   BOUNDING_RECT="706.47096765599497 -609.87086218374213 645.265625 71"
+#!   ORDER="500000000000145"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22346"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="2V3Emzjot2im0000000mM3"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="2V3Emzjot2im0000000ntv"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <OUTPUT_FEAT NAME="2V3Emzjot2im0000000mO6"/>
+#!     <FEAT_COLLAPSED COLLAPSED="6"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <OUTPUT_FEAT NAME="2V3Emzjot2im0000000mSq"/>
+#!     <FEAT_COLLAPSED COLLAPSED="7"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <OUTPUT_FEAT NAME="2V3Emzjot2im0000000itU"/>
+#!     <FEAT_COLLAPSED COLLAPSED="8"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="GlobalId"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;Empty&lt;gt&gt;,&lt;lt&gt;Missing&lt;gt&gt;,&lt;lt&gt;Null&lt;gt&gt;,&lt;lt&gt;Unfiltered&lt;gt&gt;,2V3Emzjot2im0000000mM3,2V3Emzjot2im0000000ntv,2V3Emzjot2im0000000mO6,2V3Emzjot2im0000000mSq,2V3Emzjot2im0000000itU"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="29"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1652.282627726084 -354.29795014390544"
+#!   BOUNDING_RECT="1652.282627726084 -354.29795014390544 454 71"
+#!   ORDER="500000000000212"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22346"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ifc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LongName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ElevationOfRefHeight" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ElevationOfTerrain" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.Purpose" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.UserDefinedPurpose" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.InternalLocation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.AddressLines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.PostalBox" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.Town" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.Region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BuildingAddress.Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; ifc_id SET_TO Building"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1653.282627726084 -888.11539527160039"
+#!   BOUNDING_RECT="1653.282627726084 -888.11539527160039 453 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22346"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; ifc_parent_id SET_TO Building  Name SET_TO &lt;at&gt;Value&lt;openparen&gt;GlobalId&lt;closeparen&gt;  ObjectType SET_TO Tunnel  ifc_id SET_TO Space"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator__4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="GeometryPropertySetter"
+#!   VERSION="4"
+#!   POSITION="1620.1923232332949 -595.64452184491734"
+#!   BOUNDING_RECT="1620.1923232332949 -595.64452184491734 516.71981825772946 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18567"
+#! >
+#!     <OUTPUT_FEAT NAME="SET"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNTOUCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="GlobalId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ObjectType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CompositionType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_parent_unique_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_type_object_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ifc_unique_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DOMAIN" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_NAME_FIELD" PARM_VALUE="Body"/>
+#!     <XFORM_PARM PARM_NAME="GQUERY" PARM_VALUE="for&lt;space&gt;&lt;dollar&gt;geom&lt;space&gt;in&lt;space&gt;&lt;solidus&gt;&lt;solidus&gt;geometry&lt;lf&gt;where&lt;space&gt;&lt;dollar&gt;geom&lt;solidus&gt;count&lt;openparen&gt;parent::geometry&lt;closeparen&gt;&lt;space&gt;=&lt;space&gt;0&lt;lf&gt;return&lt;space&gt;number&lt;openparen&gt;&lt;dollar&gt;geom&lt;solidus&gt;&lt;at&gt;fme_id&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GQUERY_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NAME_PARAMETERS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="OVERWRITE_CHOICE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRIBUTE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SCOPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SETTYPE_PARAM" PARM_VALUE="Geometry Name"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="START" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRAIT_ATTR_PARAMETERS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="TRAIT_COUNTER_PARAMETERS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryPropertySetter"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="29"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="43"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 0 SET"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="29"
+#!   TARGET_NODE="20"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 4 2V3Emzjot2im0000000mM3"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="39"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 5 2V3Emzjot2im0000000ntv"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 6 2V3Emzjot2im0000000mO6"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 7 2V3Emzjot2im0000000mSq"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 8 2V3Emzjot2im0000000itU"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 39
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_IFC_1,IFC_IN_READER_OPTIONS_GROUP_IFC_1,IFC_IN_VERSION_OVERRIDE_IFC_1,IFC_IN_READ_ALL_REPRESENTATIONS_IFC_1,IFC_IN_PREDEFINED_REPRESENTATION_IDENTIFIERS_IFC_1,IFC_IN_ADDITIONAL_REPRESENTATION_IDENTIFIERS_IFC_1,IFC_IN_PQSET_GROUP_IFC_1,IFC_IN_TYPEOBJECT_GROUP_IFC_1,IFC_IN_MERGE_TYPE_OBJECT_PQSETS_IFC_1,IFC_IN_FME_GROUP_NAMED1_IFC_1,IFC_IN_IFCSPACE_GEOMETRY_IFC_1,IFC_IN_SUBTRACT_OPENINGS_IFC_1,IFC_IN_ADD_PROJECTIONS_IFC_1,IFC_IN_EVALUATE_CSG_SOLIDS_IFC_1,IFC_IN_SIMPLIFY_BASE_FACES_IFC_1,IFC_IN_FME_GROUP_NAMED2_IFC_1,IFC_IN_STRING_ENCODING_IFC_1,IFC_IN_USE_SEARCH_ENVELOPE_IFC_1,IFC_IN_SEARCH_ENVELOPE_MINX_IFC_1,IFC_IN_SEARCH_ENVELOPE_MINY_IFC_1,IFC_IN_SEARCH_ENVELOPE_MAXX_IFC_1,IFC_IN_SEARCH_ENVELOPE_MAXY_IFC_1,IFC_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IFC_1,IFC_IN_CLIP_TO_ENVELOPE_IFC_1,IFC_IN_NETWORK_AUTHENTICATION_IFC_1,DestDataset_IFC_2,IFC_OUT_FME_GROUP_NAMED1_IFC_2,IFC_OUT_IFC_VERSION_IFC_2,IFC_OUT_AUTO_CREATE_BUILDING_AND_STOREY_IFC_2,IFC_OUT_GUID_SEED_IFC_2,IFC_OUT_FME_GROUP_NAMED2_IFC_2,IFC_OUT_REPRESENTATION_TYPES_IFC_2
+# ============================================================================
+DEFAULT_MACRO SourceDataset_IFC $(FME_MF_DIR)NAR_Heinenoordtunnel.ifc
+
+DEFAULT_MACRO DestDataset_IFC $(FME_MF_DIR)NAR_Heinenoordtunnel_simplified.ifc
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_IFC)} == {}} { puts_real {Parameter 'SourceDataset_IFC' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_IFC)} == {}} { puts_real {Parameter 'DestDataset_IFC' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} IFC
+MULTI_READER_KEYWORD{0} IFC_1
+MULTI_READER_GEN_DIRECTIVES{0} SEARCH_ENVELOPE_MAXY,0,PREDEFINED_REPRESENTATION_IDENTIFIERS,<lt>Unused<gt>,IFCSPACE_GEOMETRY,Yes,_MERGE_SCHEMAS,YES,ADD_PROJECTIONS,Yes,EVALUATE_CSG_SOLIDS,No,SUBTRACT_OPENINGS,Yes,SEARCH_ENVELOPE_MAXX,0,CLIP_TO_ENVELOPE,NO,SEARCH_ENVELOPE_MINY,0,PQSET_READ_MODE,GEOMETRIES,MERGE_TYPE_OBJECT_PQSETS,YES,READ_ALL_REPRESENTATIONS,YES,CREATE_PQSET_DEFINITION_FEATURES,Yes,READER_MODE,Relational,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MINX,0,USE_SEARCH_ENVELOPE,NO,ADDITIONAL_REPRESENTATION_IDENTIFIERS,<lt>Unused<gt>,SIMPLIFY_BASE_FACES,No,READER_VERSION,2014,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,TYPE_OBJECT_READ_MODE,MERGED,IFC_EXPOSE_FORMAT_ATTRS,,VERSION_OVERRIDE,auto-detect,STRING_ENCODING,
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} IFC
+MULTI_WRITER_KEYWORD{0} IFC_2
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "IFC_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER IFC IFC_1
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source
+# IFC file. The user input is stored in a macro, which is then
+# used to define the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_IFC_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER IFC IFC_1
+DEFAULT_MACRO SourceDataset_IFC_1 $(SourceDataset_IFC)
+GUI MULTIFILE SourceDataset_IFC_1 IFC_File(*.ifc;*.ifcxml)|*.ifc;*.ifcxml|All_files(*)|* Source Industry Foundation Class (IFC) File(s):
+DEFAULT_MACRO IFC_IN_READER_VERSION_IFC_1 2014
+IFC_1_READER_VERSION "$(IFC_IN_READER_VERSION_IFC_1)"
+DEFAULT_MACRO IFC_IN_READER_OPTIONS_GROUP_IFC_1 
+GUI OPTIONAL DISCLOSUREGROUP IFC_IN_READER_OPTIONS_GROUP_IFC_1 IFC_IN_VERSION_OVERRIDE_IFC_1%IFC_IN_READER_MODE%IFC_IN_READ_ALL_REPRESENTATIONS_IFC_1%IFC_IN_PREDEFINED_REPRESENTATION_IDENTIFIERS_IFC_1%IFC_IN_ADDITIONAL_REPRESENTATION_IDENTIFIERS_IFC_1%IFC_IN_PQSET_GROUP_IFC_1%IFC_IN_TYPEOBJECT_GROUP_IFC_1 Reader Parameters
+DEFAULT_MACRO IFC_IN_VERSION_OVERRIDE_IFC_1 auto-detect
+IFC_1_VERSION_OVERRIDE "$(IFC_IN_VERSION_OVERRIDE_IFC_1)"
+GUI LOOKUP_CHOICE IFC_IN_VERSION_OVERRIDE_IFC_1 <auto<space>detect>,auto-detect%IFC4.3,IFC4x3%IFC4.1,IFC4x1%IFC4,IFC4%IFC2x3,IFC2x3%IFC2x2,IFC2x2 IFC Version
+DEFAULT_MACRO IFC_IN_READER_MODE_IFC_1 Relational
+IFC_1_READER_MODE "$(IFC_IN_READER_MODE_IFC_1)"
+DEFAULT_MACRO IFC_IN_READ_ALL_REPRESENTATIONS_IFC_1 YES
+IFC_1_READ_ALL_REPRESENTATIONS "$(IFC_IN_READ_ALL_REPRESENTATIONS_IFC_1)"
+GUI ACTIVECHOICE_LOOKUP IFC_IN_READ_ALL_REPRESENTATIONS_IFC_1 Yes,YES,IFC_IN_PREDEFINED_REPRESENTATION_IDENTIFIERS_IFC_1,IFC_IN_ADDITIONAL_REPRESENTATION_IDENTIFIERS_IFC_1%No,NO Read all Geometric Representations
+DEFAULT_MACRO IFC_IN_PREDEFINED_REPRESENTATION_IDENTIFIERS_IFC_1 <Unused>
+IFC_1_PREDEFINED_REPRESENTATION_IDENTIFIERS "$(IFC_IN_PREDEFINED_REPRESENTATION_IDENTIFIERS_IFC_1)"
+GUI NO_SORT LISTBOX IFC_IN_PREDEFINED_REPRESENTATION_IDENTIFIERS_IFC_1 Box%Annotation%Axis%FootPrint%Profile%Surface%Body%Body-Fallback%Clearance%Lighting Representations to Read
+DEFAULT_MACRO IFC_IN_ADDITIONAL_REPRESENTATION_IDENTIFIERS_IFC_1 <Unused>
+IFC_1_ADDITIONAL_REPRESENTATION_IDENTIFIERS "$(IFC_IN_ADDITIONAL_REPRESENTATION_IDENTIFIERS_IFC_1)"
+GUI OPTIONAL TEXT IFC_IN_ADDITIONAL_REPRESENTATION_IDENTIFIERS_IFC_1 Additional Representations to Read
+DEFAULT_MACRO IFC_IN_PQSET_GROUP_IFC_1 
+GUI OPTIONAL DISCLOSUREGROUP IFC_IN_PQSET_GROUP_IFC_1 IFC_IN_CREATE_PQSET_DEFINITION_FEATURES%IFC_IN_PQSET_READ_MODE Property/Quantity Set Parameters
+DEFAULT_MACRO IFC_IN_CREATE_PQSET_DEFINITION_FEATURES_IFC_1 Yes
+IFC_1_CREATE_PQSET_DEFINITION_FEATURES "$(IFC_IN_CREATE_PQSET_DEFINITION_FEATURES_IFC_1)"
+DEFAULT_MACRO IFC_IN_PQSET_READ_MODE_IFC_1 GEOMETRIES
+IFC_1_PQSET_READ_MODE "$(IFC_IN_PQSET_READ_MODE_IFC_1)"
+DEFAULT_MACRO IFC_IN_TYPEOBJECT_GROUP_IFC_1 
+GUI OPTIONAL DISCLOSUREGROUP IFC_IN_TYPEOBJECT_GROUP_IFC_1 IFC_IN_TYPE_OBJECT_READ_MODE%IFC_IN_MERGE_TYPE_OBJECT_PQSETS_IFC_1 Type Object Parameters
+DEFAULT_MACRO IFC_IN_TYPE_OBJECT_READ_MODE_IFC_1 MERGED
+IFC_1_TYPE_OBJECT_READ_MODE "$(IFC_IN_TYPE_OBJECT_READ_MODE_IFC_1)"
+DEFAULT_MACRO IFC_IN_MERGE_TYPE_OBJECT_PQSETS_IFC_1 YES
+IFC_1_MERGE_TYPE_OBJECT_PQSETS "$(IFC_IN_MERGE_TYPE_OBJECT_PQSETS_IFC_1)"
+GUI LOOKUP_CHOICE IFC_IN_MERGE_TYPE_OBJECT_PQSETS_IFC_1 Yes,YES%No,NO Merge Property/Quantity Sets of Type Objects into Property/Quantity Sets of Real Objects
+DEFAULT_MACRO IFC_IN_FME_GROUP_NAMED1_IFC_1 
+GUI OPTIONAL DISCLOSUREGROUP IFC_IN_FME_GROUP_NAMED1_IFC_1 IFC_IN_IFCSPACE_GEOMETRY_IFC_1%IFC_IN_SUBTRACT_OPENINGS_IFC_1%IFC_IN_ADD_PROJECTIONS_IFC_1%IFC_IN_EVALUATE_CSG_SOLIDS_IFC_1%IFC_IN_SIMPLIFY_BASE_FACES_IFC_1 Geometry
+DEFAULT_MACRO IFC_IN_IFCSPACE_GEOMETRY_IFC_1 Yes
+IFC_1_IFCSPACE_GEOMETRY "$(IFC_IN_IFCSPACE_GEOMETRY_IFC_1)"
+GUI CHOICE IFC_IN_IFCSPACE_GEOMETRY_IFC_1 Yes%No Read IfcSpace Geometries:
+DEFAULT_MACRO IFC_IN_SUBTRACT_OPENINGS_IFC_1 Yes
+IFC_1_SUBTRACT_OPENINGS "$(IFC_IN_SUBTRACT_OPENINGS_IFC_1)"
+GUI CHOICE IFC_IN_SUBTRACT_OPENINGS_IFC_1 Yes%No Subtract Opening Geometries:
+DEFAULT_MACRO IFC_IN_ADD_PROJECTIONS_IFC_1 Yes
+IFC_1_ADD_PROJECTIONS "$(IFC_IN_ADD_PROJECTIONS_IFC_1)"
+GUI CHOICE IFC_IN_ADD_PROJECTIONS_IFC_1 Yes%No Add Projecting Geometries:
+DEFAULT_MACRO IFC_IN_EVALUATE_CSG_SOLIDS_IFC_1 No
+IFC_1_EVALUATE_CSG_SOLIDS "$(IFC_IN_EVALUATE_CSG_SOLIDS_IFC_1)"
+GUI CHOICE IFC_IN_EVALUATE_CSG_SOLIDS_IFC_1 Yes%No Evaluate CSG Solids
+DEFAULT_MACRO IFC_IN_SIMPLIFY_BASE_FACES_IFC_1 No
+IFC_1_SIMPLIFY_BASE_FACES "$(IFC_IN_SIMPLIFY_BASE_FACES_IFC_1)"
+GUI CHOICE IFC_IN_SIMPLIFY_BASE_FACES_IFC_1 Yes%No Simplify Extrusion Base Faces
+DEFAULT_MACRO IFC_IN_FME_GROUP_NAMED2_IFC_1 
+GUI OPTIONAL DISCLOSUREGROUP IFC_IN_FME_GROUP_NAMED2_IFC_1 IFC_IN_STRING_ENCODING_IFC_1 Encoding
+DEFAULT_MACRO IFC_IN_STRING_ENCODING_IFC_1 
+IFC_1_STRING_ENCODING "$(IFC_IN_STRING_ENCODING_IFC_1)"
+GUI OPTIONAL ENCODING IFC_IN_STRING_ENCODING_IFC_1 * String Encoding:
+DEFAULT_MACRO IFC_IN_EXPOSE_ATTRS_GROUP_IFC_1 
+IFC_1_EXPOSE_ATTRS_GROUP "$(IFC_IN_EXPOSE_ATTRS_GROUP_IFC_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO IFC_IN_USE_SEARCH_ENVELOPE_IFC_1 NO
+IFC_1_USE_SEARCH_ENVELOPE "$(IFC_IN_USE_SEARCH_ENVELOPE_IFC_1)"
+GUI ACTIVEDISCLOSUREGROUP IFC_IN_USE_SEARCH_ENVELOPE_IFC_1 IFC_IN_SEARCH_ENVELOPE_MINX_IFC_1%IFC_IN_SEARCH_ENVELOPE_MINY_IFC_1%IFC_IN_SEARCH_ENVELOPE_MAXX_IFC_1%IFC_IN_SEARCH_ENVELOPE_MAXY_IFC_1%IFC_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IFC_1%IFC_IN_CLIP_TO_ENVELOPE_IFC_1%IFC_IN_SEARCH_METHOD%IFC_IN_SEARCH_METHOD_FILTER%IFC_IN_SEARCH_ORDER%IFC_IN_SEARCH_FEATURE%IFC_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP IFC_IN_SEARCH_ENVELOPE_MINX_IFC_1 <Unused>,0 
+DEFAULT_MACRO IFC_IN_SEARCH_ENVELOPE_MINX_IFC_1 0
+IFC_1_SEARCH_ENVELOPE "$(IFC_IN_SEARCH_ENVELOPE_MINX_IFC_1)"
+GUI OPTIONAL FLOAT IFC_IN_SEARCH_ENVELOPE_MINX_IFC_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP IFC_IN_SEARCH_ENVELOPE_MINY_IFC_1 <Unused>,0 
+DEFAULT_MACRO IFC_IN_SEARCH_ENVELOPE_MINY_IFC_1 0
+IFC_1_SEARCH_ENVELOPE "$(IFC_IN_SEARCH_ENVELOPE_MINY_IFC_1)"
+GUI OPTIONAL FLOAT IFC_IN_SEARCH_ENVELOPE_MINY_IFC_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP IFC_IN_SEARCH_ENVELOPE_MAXX_IFC_1 <Unused>,0 
+DEFAULT_MACRO IFC_IN_SEARCH_ENVELOPE_MAXX_IFC_1 0
+IFC_1_SEARCH_ENVELOPE "$(IFC_IN_SEARCH_ENVELOPE_MAXX_IFC_1)"
+GUI OPTIONAL FLOAT IFC_IN_SEARCH_ENVELOPE_MAXX_IFC_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP IFC_IN_SEARCH_ENVELOPE_MAXY_IFC_1 <Unused>,0 
+DEFAULT_MACRO IFC_IN_SEARCH_ENVELOPE_MAXY_IFC_1 0
+IFC_1_SEARCH_ENVELOPE "$(IFC_IN_SEARCH_ENVELOPE_MAXY_IFC_1)"
+GUI OPTIONAL FLOAT IFC_IN_SEARCH_ENVELOPE_MAXY_IFC_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP IFC_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IFC_1 <Unused>, 
+DEFAULT_MACRO IFC_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IFC_1 
+IFC_1_SEARCH_ENVELOPE "$(IFC_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IFC_1)"
+GUI OPTIONAL COORDSYS IFC_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IFC_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP IFC_IN_CLIP_TO_ENVELOPE_IFC_1 <Unused>,NO 
+DEFAULT_MACRO IFC_IN_CLIP_TO_ENVELOPE_IFC_1 NO
+IFC_1_CLIP_TO_ENVELOPE "$(IFC_IN_CLIP_TO_ENVELOPE_IFC_1)"
+GUI OPTIONAL CHECKBOX IFC_IN_CLIP_TO_ENVELOPE_IFC_1 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO IFC_IN_NETWORK_AUTHENTICATION_IFC_1 
+IFC_1_NETWORK_AUTHENTICATION "$(IFC_IN_NETWORK_AUTHENTICATION_IFC_1)"
+GUI OPTIONAL AUTHENTICATOR IFC_IN_NETWORK_AUTHENTICATION_IFC_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO IFC_IN_ATTRIBUTE_READING_IFC_1 ALL
+IFC_1_ATTRIBUTE_READING "$(IFC_IN_ATTRIBUTE_READING_IFC_1)"
+# ============================================================================
+IFC_1_GENERATE_FME_BUILD_NUM 22346
+IFC_1_DATASET "$(SourceDataset_IFC_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "IFC_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER IFC IFC_2
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_IFC_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER IFC IFC_2
+DEFAULT_MACRO DestDataset_IFC_2 $(DestDataset_IFC)
+GUI FILENAME DestDataset_IFC_2 IFC_File(*.ifc)|*.ifc|All_files(*)|* Destination Industry Foundation Class (IFC) File(s):
+DEFAULT_MACRO IFC_OUT_FME_GROUP_NAMED1_IFC_2 
+GUI OPTIONAL DISCLOSUREGROUP IFC_OUT_FME_GROUP_NAMED1_IFC_2 IFC_OUT_IFC_VERSION_IFC_2%IFC_OUT_GUID_SEED_IFC_2%IFC_OUT_AUTO_CREATE_BUILDING_AND_STOREY_IFC_2 IFC Parameters
+DEFAULT_MACRO IFC_OUT_IFC_VERSION_IFC_2 IFC2x3
+IFC_2_IFC_VERSION "$(IFC_OUT_IFC_VERSION_IFC_2)"
+GUI CHOICE IFC_OUT_IFC_VERSION_IFC_2 IFC2x3%IFC4%IFC4x3 IFC Version:
+DEFAULT_MACRO IFC_OUT_AUTO_CREATE_BUILDING_AND_STOREY_IFC_2 NO
+IFC_2_AUTO_CREATE_BUILDING_AND_STOREY "$(IFC_OUT_AUTO_CREATE_BUILDING_AND_STOREY_IFC_2)"
+GUI LOOKUP_CHOICE IFC_OUT_AUTO_CREATE_BUILDING_AND_STOREY_IFC_2 Yes,YES%No,NO Auto-create Building and BuildingStorey nodes if none are provided
+DEFAULT_MACRO IFC_OUT_GUID_SEED_IFC_2 
+IFC_2_GUID_SEED "$(IFC_OUT_GUID_SEED_IFC_2)"
+GUI OPTIONAL TEXT IFC_OUT_GUID_SEED_IFC_2 GUID Seed Value:
+DEFAULT_MACRO IFC_OUT_FME_GROUP_NAMED2_IFC_2 
+GUI OPTIONAL DISCLOSUREGROUP IFC_OUT_FME_GROUP_NAMED2_IFC_2 IFC_OUT_REPRESENTATION_TYPES_IFC_2 Representation Contexts
+DEFAULT_MACRO IFC_OUT_REPRESENTATION_TYPES_IFC_2 Model,Body,SOLIDS<space>SURFACES;Model,Axis,CURVES;Model,Annotation,TEXT<space>CURVES
+IFC_2_REPRESENTATION_TYPES "$(IFC_OUT_REPRESENTATION_TYPES_IFC_2)"
+GUI GUI_LINE_TABLE IFC_OUT_REPRESENTATION_TYPES_IFC_2 NO_LABEL%COL_DELIM:,%ROW_DELIM:;%Type%"STRING_ENCODED REP_TYPE"%Identifier%"STRING_ENCODED REP_IDENTIFIER"%"Geometry Types"%"LOOKUP_LISTBOX_ENCODED REP_GEOM_TYPES Curves,CURVES%Solids,SOLIDS%Surfaces,SURFACES%Text,TEXT" Representation Contexts:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO IFC_OUT_DESTINATION_DATASETTYPE_VALIDATION_IFC_2 Yes
+IFC_2_DESTINATION_DATASETTYPE_VALIDATION "$(IFC_OUT_DESTINATION_DATASETTYPE_VALIDATION_IFC_2)"
+# ============================================================================
+IFC_2_GENERATE_FME_BUILD_NUM 22346
+IFC_2_DATASET "$(DestDataset_IFC_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)cs2_ifc2ifc_(1).log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2022.0.1.0 (20220602 - Build 22346 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_IFC_1 IFC_1
+DEFAULT_MACRO DATASET_KEYWORD_IFC_2 IFC_2
+# -------------------------------------------------------------------------
+
+IFC_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME cs2_ifc2ifc_(1)
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+IFC_1_DEF IfcBuildingElementProxy   GlobalId                     char(22)   Name                         string   Description                  string   ObjectType                   string   Tag                          string   CompositionType              enumeration   Body                         geometry   ifc_type_object_id           string
+# -------------------------------------------------------------------------
+IFC_1_DEF IfcBuilding   GlobalId                     char(22)   Name                         string   Description                  string   ObjectType                   string   LongName                     string   CompositionType              string   ElevationOfRefHeight         real   ElevationOfTerrain           real   BuildingAddress.Purpose      enumeration   BuildingAddress.Description  string   BuildingAddress.UserDefinedPurpose string   BuildingAddress.InternalLocation string   BuildingAddress.AddressLines string   BuildingAddress.PostalBox    string   BuildingAddress.Town         string   BuildingAddress.Region       string   BuildingAddress.PostalCode   string   BuildingAddress.Country      string   Body                         geometry   ifc_type_object_id           string
+# -------------------------------------------------------------------------
+IFC_1_DEF IfcProject   GlobalId                     char(22)   Name                         string   Description                  string   ObjectType                   string   LongName                     string   Phase                        string   Body                         geometry   ifc_type_object_id           string
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_IFC_1)   INPUT FEATURE_TYPE *    ROUTE IFC IFC_1::IfcBuildingElementProxy multi_reader_keyword,$(DATASET_KEYWORD_IFC_1) TO FME_GENERIC ::IfcBuildingElementProxy ALIAS_GEOMETRY    ROUTE IFC IFC_1::IfcBuilding multi_reader_keyword,$(DATASET_KEYWORD_IFC_1) TO FME_GENERIC ::IfcBuilding ALIAS_GEOMETRY    ROUTE IFC IFC_1::IfcProject multi_reader_keyword,$(DATASET_KEYWORD_IFC_1) TO FME_GENERIC ::IfcProject ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+IFC_1_MERGE_DEF IFC_1::IfcBuildingElementProxy EXACT IfcBuildingElementProxy
+IFC_1_MERGE_DEF IFC_1::IfcBuilding EXACT IfcBuilding
+IFC_1_MERGE_DEF IFC_1::IfcProject EXACT IfcProject
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "IfcBuilding_IFC_1 Splitter"    INPUT FEATURE_TYPE IfcBuilding    OUTPUT FEATURE_TYPE IfcBuilding_IFC_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "IfcBuildingElementProxy_IFC_1 Splitter"    INPUT FEATURE_TYPE IfcBuildingElementProxy    OUTPUT FEATURE_TYPE IfcBuildingElementProxy_IFC_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "IfcProject_IFC_1 Splitter"    INPUT FEATURE_TYPE IfcProject    OUTPUT FEATURE_TYPE IfcProject_IFC_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeFilter }    INPUT  FEATURE_TYPE IfcBuildingElementProxy_IFC_1    OUTPUT { FEATURE_TYPE AttributeFilter_FILTER }
+FACTORY_DEF {*} AttributeFilterFactory FACTORY_NAME AttributeFilter_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE AttributeFilter_FILTER FILTER_ATTRIBUTE { GlobalId } FILTER_VALUES { <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> 2V3Emzjot2im0000000mM3 2V3Emzjot2im0000000ntv 2V3Emzjot2im0000000mO6 2V3Emzjot2im0000000mSq 2V3Emzjot2im0000000itU } PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE AttributeFilter_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE AttributeFilter_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt> OUTPUT 2V3Emzjot2im0000000mM3 FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000mM3 OUTPUT 2V3Emzjot2im0000000ntv FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000ntv OUTPUT 2V3Emzjot2im0000000mO6 FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000mO6 OUTPUT 2V3Emzjot2im0000000mSq FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000mSq OUTPUT 2V3Emzjot2im0000000itU FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000itU
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>EMPTY<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>MISSING<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>MISSING<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>NULL<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>NULL<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>UNFILTERED<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt>
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {GeometryPropertySetter_a389d054_53fd_4f73_aa73_d7ba73d512d11} ]
+Tcl2 proc $(FME_UUID_SAFE)_createDomain { in_domainName } {    set domainName $in_domainName;    if { {<Unused>} != {Global} }    {       set xFormName [FME_EncodeText {GeometryPropertySetter_}];       set domainName $xFormName$domainName;    };    return $domainName; }
+INCLUDE [    set macroLine "MACRO GeometryPropertySetter_SRC_ATTRS_EXP ";    puts $macroLine; ]
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { GeometryPropertySetter_Tester }    INPUT  FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000mM3    INPUT  FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000ntv    INPUT  FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000mO6    INPUT  FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000mSq    INPUT  FEATURE_TYPE AttributeFilter_2V3Emzjot2im0000000itU    TEST { "<Unused>" TYPE NUM ENCODED }    TEST { NO != YES }    BOOLEAN_OPERATOR OR    OUTPUT { PASSED FEATURE_TYPE GeometryPropertySetter__toGQuery__ }
+FACTORY_DEF {*} GQueryFactory    FACTORY_NAME { GeometryPropertySetter_GQuery }    INPUT { FEATURE_TYPE GeometryPropertySetter__toGQuery__ }    GQUERY { "for<space><dollar>geom<space>in<space><solidus><solidus>geometry<lf>where<space><dollar>geom<solidus>count<openparen>parent::geometry<closeparen><space>=<space>0<lf>return<space>number<openparen><dollar>geom<solidus><at>fme_id<closeparen>" }    ACTION { SET_GEOMNAME }    PARAMETER { yes "Body" }    OUTPUT { RESULT FEATURE_TYPE GeometryPropertySetter___RemoveAttrs___ }
+FACTORY_DEF {<Unused>} TeeFactory    FACTORY_NAME { GeometryPropertySetter_AttrRemover }    INPUT { FEATURE_TYPE GeometryPropertySetter___RemoveAttrs___ }    OUTPUT { FEATURE_TYPE *       @RemoveAttributes(fme_encoded"$(GeometryPropertySetter_SRC_ATTRS_EXP)") }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { GeometryPropertySetter_Outputter }    INPUT { FEATURE_TYPE GeometryPropertySetter___RemoveAttrs___ }    OUTPUT { FEATURE_TYPE GeometryPropertySetter_SET        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator__4 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE GeometryPropertySetter_SET    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "ifc_parent_id" "SET_TO" "Building" }      ATTR_ACTION { "" "Name" "SET_TO" "<at>Value<openparen>GlobalId<closeparen>" }      ATTR_ACTION { "" "ObjectType" "SET_TO" "Tunnel" }      ATTR_ACTION { "" "ifc_id" "SET_TO" "Space" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator__4_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE IfcBuilding_IFC_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "ifc_id" "SET_TO" "Building" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_OUTPUT TO IFC __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>IfcBuilding<closeparen> GEOMETRY    ROUTE FME_GENERIC IfcProject_IFC_1 TO IFC __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>IfcProject<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator__4_OUTPUT TO IFC __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>IfcSpace<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+IFC_2_DEF IfcBuilding   GlobalId                     char(22)   Name                         string   Description                  string   ObjectType                   string   LongName                     string   CompositionType              string   ElevationOfRefHeight         real   ElevationOfTerrain           real   BuildingAddress.Purpose      enumeration   BuildingAddress.Description  string   BuildingAddress.UserDefinedPurpose string   BuildingAddress.InternalLocation string   BuildingAddress.AddressLines string   BuildingAddress.PostalBox    string   BuildingAddress.Town         string   BuildingAddress.Region       string   BuildingAddress.PostalCode   string   BuildingAddress.Country      string   Body                         geometry   ifc_type_object_id           string
+# -------------------------------------------------------------------------
+IFC_2_DEF IfcProject   GlobalId                     char(22)   Name                         string   Description                  string   ObjectType                   string   LongName                     string   Phase                        string   Body                         geometry   ifc_type_object_id           string
+# -------------------------------------------------------------------------
+IFC_2_DEF IfcSpace   GlobalId                     char(22)   Name                         string   Description                  string   ObjectType                   string   Tag                          string   CompositionType              enumeration   Body                         geometry   ifc_type_object_id           string
