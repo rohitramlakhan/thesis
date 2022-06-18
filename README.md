@@ -12,7 +12,7 @@ In both folders of the cases are all the filed to recreate the steps written in 
 Exception is the original model of the Heinenoordtunnel and the 3D Tiles of the simplified Heinenoordtunnel. <br>
 These files were too large (also after zipping) to upload to Github. <br>
 The zipped file from the simplified IFC model of the Heinenoordtunnel is there. <br>
-It should therefore be possible to create the 3D Tiles of the simplified Heinenoordtunnel <br>
+It should therefore be possible to create the 3D Tiles of the simplified Heinenoordtunnel. <br>
 
 Links to directly visualising the cases in Cesium Sandcastle can be found in the following folders and documents: <br>
 
