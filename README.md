@@ -24,7 +24,7 @@ It should therefore be possible to create the 3D Tiles of the simplified Heineno
 Links to directly visualising the cases in Cesium Sandcastle can be found in the following folders and documents: <br>
 
 1. For case 1: case_almere/Cesium JS/case_almere.txt or <br>
-   for case 2: case_heinenoord/Cesium JS/case_heinenoord.txt <br>
+   for case 2: case_heinenoord/Cesium JS/case_heinenoord.txt. <br>
 2. Copy and paste the link of the case that you want to visualise to the internet browser. <br>
 
 ### Method 2
