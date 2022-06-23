@@ -3,6 +3,8 @@
 This repository contains the data of the case studies that were implemented and described in the thesis <br>
 'Modelling the legal spaces of 3D underground objects in a 3D Land Administration System'.
 
+## Case studies
+
 There are two cases: <br> 
 - case 1. Sewage pipes in Almere (case_almere) <br>
 - case 2. Heinenoordtunnel (case_heinenoord) <br> 
@@ -13,6 +15,8 @@ Exception is the original model of the Heinenoordtunnel and the 3D Tiles of the 
 These files were too large (also after zipping) to upload to Github. <br>
 The zipped file from the simplified IFC model of the Heinenoordtunnel is there. <br>
 It should therefore be possible to create the 3D Tiles of the simplified Heinenoordtunnel. <br>
+
+## Visualising the case studies
 
 Links to directly visualising the cases in Cesium Sandcastle can be found in the following folders and documents: <br>
 
