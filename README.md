@@ -35,7 +35,7 @@ Download the files cs1_cesium_javascript.js and cs1_cesium_css.css from the fold
 download the files cs2_cesium_javascript.js and cs2_cesium_css.css from the folder case_heinenoord/Cesium JS for the case in Heinenoord. <br>
 Open the files with Notepad or Notepad++. <br>
 Go to https://sandcastle.cesium.com/. <br>
-Copy the content of the Javascript file to the tab 'JavaScript code' of Sandcastle (delete what is written there first). <br>
-Copy the content of the CSS file to the tab 'HTML body & CSS' of Sandcastle (delete what is written there first). <br>
+Copy the content of the Javascript file (.js file) to the tab 'JavaScript code' of Sandcastle (delete what is written there first). <br>
+Copy the content of the CSS file (.css file) to the tab 'HTML body & CSS' of Sandcastle (delete what is written there first). <br>
 Then press the button 'Run (F8)'. <br>
 
