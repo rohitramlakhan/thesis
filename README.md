@@ -29,7 +29,7 @@ Links to directly visualising the cases in Cesium Sandcastle can be found in the
 
 ### Method 2
 
-If the link does not work, an alternative method to visualising the case studies in Cesium Sandcastle is: <br>
+If the links do not work, an alternative method to visualising the case studies in Cesium Sandcastle is: <br>
 
 1. For case 1: download the files cs1_cesium_javascript.js and cs1_cesium_css.css from the folder case_almere/Cesium JS or 
    for case 2: download the files cs2_cesium_javascript.js and cs2_cesium_css.css from the folder case_heinenoord/Cesium JS. <br>
