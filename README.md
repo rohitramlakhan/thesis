@@ -31,8 +31,8 @@ Links to directly visualising the cases in Cesium Sandcastle can be found in the
 
 If the link does not work, an alternative method to visualising the case studies in Cesium Sandcastle is: <br>
 
-1. Download the files cs1_cesium_javascript.js and cs1_cesium_css.css from the folder case_almere/Cesium JS for the case in Almere and / or 
-download the files cs2_cesium_javascript.js and cs2_cesium_css.css from the folder case_heinenoord/Cesium JS for the case in Heinenoord. <br>
+1. Download the files cs1_cesium_javascript.js and cs1_cesium_css.css from the folder case_almere/Cesium JS for the case 1 or 
+download the files cs2_cesium_javascript.js and cs2_cesium_css.css from the folder case_heinenoord/Cesium JS for the case 2. <br>
 2. Open the files with Notepad or Notepad++. <br>
 3. Go to https://sandcastle.cesium.com/. <br>
 4. Copy the content of the Javascript file (.js file) to the tab 'JavaScript code' of Sandcastle <br> (delete what is written in the box first). 
