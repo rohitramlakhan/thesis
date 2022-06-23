@@ -35,7 +35,7 @@ If the link does not work, an alternative method to visualising the case studies
 download the files cs2_cesium_javascript.js and cs2_cesium_css.css from the folder case_heinenoord/Cesium JS for the case in Heinenoord. <br>
 2. Open the files with Notepad or Notepad++. <br>
 3. Go to https://sandcastle.cesium.com/. <br>
-4. Copy the content of the Javascript file (.js file) to the tab 'JavaScript code' of Sandcastle (delete what is written there first). <br>
-5. Copy the content of the CSS file (.css file) to the tab 'HTML body & CSS' of Sandcastle (delete what is written there first). <br>
+4. Copy the content of the Javascript file (.js file) to the tab 'JavaScript code' of Sandcastle <br> (delete what is written there first). 
+5. Copy the content of the CSS file (.css file) to the tab 'HTML body & CSS' of Sandcastle <br> (delete what is written there first). 
 6. Then press the button 'Run (F8)'. <br>
 
