@@ -18,15 +18,15 @@ Links to directly visualising the cases in Cesium Sandcastle can be found in the
 
 For case 1: case_almere/Cesium JS/case_almere.txt <br> 
 For case 2: case_heinenoord/Cesium JS/case_heinenoord.txt <br>
-Copy and paste the links to the internet browser. <br>
+Copy and paste the link of the case that you want to visualise to the internet browser. <br>
 
-If the link does not work, an alternative method to visualising the case studies in Cesium Sandcastles is: <br>
+If the link does not work, an alternative method to visualising the case studies in Cesium Sandcastle is: <br>
 
 Download the files cs1_cesium_javascript.js and cs1_cesium_css.css from the folder case_almere/Cesium JS for the case in Almere and / or <br>
 download the files cs2_cesium_javascript.js and cs2_cesium_css.css from the folder case_heinenoord/Cesium JS for the case in Heinenoord. <br>
 Open the files with Notepad or Notepad++. <br>
 Go to https://sandcastle.cesium.com/. <br>
 Copy the content of the Javascript file to the tab 'JavaScript code' of Sandcastle (delete what is written there first). <br>
-Then copy the content of the CSS file to the 'HTML body & CSS' of Sandcastle (delete what is written there first). <br>
-Then press the butten 'Run (F8)'. <br>
+Copy the content of the CSS file to the tab 'HTML body & CSS' of Sandcastle (delete what is written there first). <br>
+Then press the button 'Run (F8)'. <br>
 
